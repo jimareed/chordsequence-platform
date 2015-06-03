@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="zhh4uzt4lmczvep"></script>
+
+</head>
+<body>
+
+<h1>Add Song</h1>
+<textarea rows="20" cols="80" name="song" form="usrform">
+{t:Song Title}
+{st:Artist Name}
+
+Verse 1:
+Copy [F]paste songs in text or [Am]ChordPro format
+here or [E7]import your song from Dropbox by selecting 
+the button below.  [D]Click "Submit" when done.
+</textarea>
+<form action="/chordsequence" id="usrform">
+	<input type="hidden" name="action" value="addsong" />
+	<p>Paste the song into the area above or <input type="dropbox-chooser" data-link-type="direct" name="selected-file" style="visibility: hidden;"/>
+and press <input type="submit"></p>
+</form>
+<br>
+
+
+
+</body>
+</html>

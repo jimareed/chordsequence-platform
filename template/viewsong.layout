@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function selectchord(chord) {
+}
+
+function click(ev,line,column) {
+}
+
+function previous() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=viewsong&songid={$previoussongid}&width=" + w;
+    window.location.assign(newpage);
+}
+
+function next() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=viewsong&songid={$nextsongid}&width=" + w;
+    window.location.assign(newpage);
+}
+
+
+
+</script>
+</head>
+<body>
+{$title}
+<table width="100%"">
+<tr height="30"/>
+<tr align="center">
+<td width="5%" valign="top">
+	<img src="/images/leftarrow.png" height="35" width="35" onclick="previous();" />
+</td>
+<td>
+{$chordchart}
+</td>
+<td width="5%" align="right" valign="top">
+	<img src="/images/rightarrow.png" height="35" width="35" onclick="next();" />
+</td>
+</tr>
+<tr>
+{$body}
+</tr>
+</table>
+</body>
+</html>

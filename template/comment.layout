@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Comments</h1>
+
+<p>Chord Sequence is still under development.</p> 
+<p/> 
+<p>Comments and suggestions appreciated:</p>
+<textarea rows="20" cols="80" name="comments" form="usrform">
+</textarea>
+<form action="/chordsequence" id="usrform">
+	<input type="hidden" name="action" value="addcomment" />
+	<input type="hidden" name="view" value="viewsong" />
+	<input type="hidden" name="songid" value="{$songid}" />
+	<input type="hidden" name="pagenum" value="{$pagenum}" />
+	<p><input type="submit"></p>
+</form>
+<br>
+
+
+
+</body>
+</html>

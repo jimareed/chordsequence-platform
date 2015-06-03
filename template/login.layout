@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function processForm() {
+    var password = document.forms["loginform"]["password"].value;
+    var encodedpassword = btoa(password);
+    var user = document.forms["loginform"]["user"].value;
+
+
+    var newpage = "/chordsequencek?action=login&view=editsong&user=" + user + "&password=" + password + "&encodedpassword=" + encodedpassword;
+    window.location.assign(newpage);
+}
+
+
+</script>
+</head>
+<body>
+<h1>Login</h1>
+
+<form id="loginform" name="loginform" onsubmit="processForm()">
+	<table>
+	<tr>
+		<td>User:</td>
+		<td><input name="user" value="" /></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" name="password" value="" /></td>
+	</tr>
+	</table>
+	<input type="hidden" name="action" value="login" />
+	<input type="hidden" name="view" value="viewsong" />
+	<p>Enter user name and password and select <input type="submit"/></p>
+</form>
+<br/>
+
+
+
+</body>
+</html>

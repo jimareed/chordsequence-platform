@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table width="100%">
+<tr><td align="right">
+</td></tr></table>
+<div id="title"  style="line-height:75%;">
+<table width="100%">
+<tr>
+<td align="right">
+	<table><tr>
+<td>
+<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fchordsequence.com%2Fchordsequence%2Fsong%2F{$sharedsongid}%2F&media=http%3A%2F%2Fchordsequence.com%2Fchordsequence%2Fimage%2F{$sharedsongid}%2F&description=Guitar%20chords%20for%20{$urltitle}" data-pin-do="buttonPin" data-pin-config="none" data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>		
+<a href="/chordsequence?view=viewsong&songid={$songid}"><img src="/images/edit.png"/></a>
+<a href="/chordsequence?view=viewsong&songid=0"><img src="/images/return.png"/></a>
+	</td>
+	</tr></table>
+</td>
+</tr>
+<tr>
+<td align="center" width="100%">
+{$title}
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr><td align="center">{$artist}</td></tr>
+</table>
+</div>
+<table width="100%"">
+<tr height="30"/>
+<tr align="center">
+<td width="5%" valign="top">
+</td>
+<td>
+{$chordchart}
+</td>
+<td width="5%" align="right" valign="top">
+</td>
+</tr>
+<tr>
+{$body}
+</tr>
+</table>
+</body>
+</html>

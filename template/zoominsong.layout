@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+</script>
+</head>
+<body>
+<pre>
+{$body}
+</pre>
+<p><a href="/chordsequence?view=opensong&songid={$songid}&pagenum={$pagenum}">Return...</p>
+</body>
+</html>

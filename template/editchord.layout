@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function selectchordstring(chord, string, fret) {
+    var newpage = "/chordsequence?action=updatechord&view=editchord&songid={$songid}&pagenum={$pagenum}&chord=" + chord + "&string=" + string + "&fret=" + fret;
+    window.location.assign(newpage);
+}
+
+
+
+</script>
+</head>
+<body>
+<h1>Edit Chord - {$chordnoencode}</h1>
+<pre>
+<table>
+<tr>
+<td>
+{$body}
+</td>
+<td valign="middle">
+	<a href="/chordsequence?action=previousbasefret&view=editchord&songid={$songid}&pagenum={$pagenum}&chord={$chord}"><img width="38" height="36" src="/images/uparrow.png"/></a>
+	<a href="/chordsequence?action=nextbasefret&view=editchord&songid={$songid}&pagenum={$pagenum}&chord={$chord}"><img  width="38" height="36" src="/images/downarrow.png"/></a>
+	<img src="/images/blank.png"/>
+</td>
+</tr>
+</table>
+</pre>
+<table>
+<tr>
+<td width="80">
+	<a href="/chordsequence?view=editsong&songid={$songid}&pagenum={$pagenum}&chord={$chord}">Cancel</a>
+</td>
+<td width="80">
+	<a href="/chordsequence?view=renamechord&songid={$songid}&pagenum={$pagenum}&chord={$chord}&fromchord={$chord}">Rename</a>
+</td>
+<td width="80">
+	<a href="/chordsequence?action=deletechord&view=editsong&songid={$songid}&pagenum={$pagenum}&chord={$chord}">Delete</a>
+</td>
+<td width="80">
+	<a href="/chordsequence?action=updatechordfinish&view=editsong&songid={$songid}&pagenum={$pagenum}&chord={$chord}">Submit</a>
+</td>
+</tr>
+</table>
+</body>
+</html>

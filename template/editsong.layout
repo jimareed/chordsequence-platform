@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function selectlyric(ev,line,column) {
+    var data = ev.dataTransfer.getData("text");
+
+    var newpage = "/chordsequence?action=addchordref&view=opensong&songid={$songid}&pagenum={$pagenum}&chord=" + data + "&line=" + line + "&column=" + column;
+    window.location.assign(newpage);
+}
+
+function selectchord(chord) {
+    var newpage = "/chordsequence?view=editsong&songid={$songid}&pagenum={$pagenum}&chord=" + chord;
+    window.location.assign(newpage);
+}
+
+function click(ev,line,column) {
+
+    var newpage = "/chordsequence?action=addchordref&view=editsong&songid={$songid}&pagenum={$pagenum}&chord={$chord}&line=" + line + "&column=" + column;
+    window.location.assign(newpage);
+}
+
+function previous() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=editsong&songid={$songid}&pagenum={$previouspagenum}&chord={$chord}&width=" + w;
+    window.location.assign(newpage);
+}
+
+function next() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=editsong&songid={$songid}&pagenum={$nextpagenum}&chord={$chord}&&width=" + w;
+    window.location.assign(newpage);
+}
+
+
+
+</script>
+</head>
+<body>
+{$title}
+<table width="100%">
+<tr>
+<td>
+{$body}
+</td>
+</tr>
+<tr align="center">
+<td>
+{$chordchart}
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td width="5%" valign="top">
+	<img src="/images/leftarrow.png" height="35" width="35" onclick="previous();" />
+</td>
+<td width="5%" align="right" valign="top">
+	<img src="/images/rightarrow.png" height="35" width="35" onclick="next();" />
+</td>
+</tr>
+</table>
+
+</body>
+</html>

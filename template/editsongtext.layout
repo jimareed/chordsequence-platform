@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Edit Song</h1>
+
+<textarea rows="20" cols="80" name="song" form="usrform">
+{$song}
+</textarea>
+<form action="/chordsequence" id="usrform">
+	<input type="hidden" name="action" value="updatesong" />
+	<input type="hidden" name="view" value="editsong" />
+	<input type="hidden" name="songid" value="{$songid}" />
+	<input type="hidden" name="pagenum" value="{$pagenum}" />
+	<p>Update the song and press <input type="submit"></p>
+</form>
+<br>
+
+
+
+</body>
+</html>

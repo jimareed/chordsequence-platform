@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Add Chord</h1>
+
+<form action="/chordsequence" id="usrform">
+	<input name="chord" value="{$chord}" />
+	<input type="hidden" name="fromchord" value="{$chord}" />
+	<input type="hidden" name="action" value="{$action}" />
+	<input type="hidden" name="view" value="editsong" />
+	<input type="hidden" name="songid" value="{$songid}" />
+	<input type="hidden" name="pagenum" value="{$pagenum}" />
+	<p>Enter the chord and press <input type="submit"></p>
+</form>
+<br>
+
+
+
+</body>
+</html>

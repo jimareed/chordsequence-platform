@@ -1,0 +1,63 @@
+{id:0}
+{t:Welcome to Chord Sequence}
+{st:}
+
+Chord [F]Sequence is a simple editor for editing guitar
+songs in the [Am]ChordPro format.  It's [D]useful when the
+online version of a [E7]song isn't quite the way you  
+like to play it.  
+
+[F]Click on the plus at the top right to add a song.  
+Click on the pencil to edit it.  [D]In edit mode, select 
+a [Am]chord at the bottom then click on the song lyrics 
+to add it.  Click on the pencil at the [E7]bottom to edit 
+the chord position.
+
+Once you are [D]done, click on the pencil twice at the 
+top right to copy [E7]paste the [F]song into your 
+favorite guitar songbook [Am]software or click the export 
+button to save it to Pinterest.
+{id:1}
+{t:When The Levee Breaks}
+{st:}
+{define: D base-fret 0 frets x 0 0 2 3 2 fingers - - - - - -}
+{define: F base-fret 0 frets 1 3 3 2 1 1 fingers - - - - - -}
+{define: G base-fret 0 frets 3 2 0 0 0 3 fingers - - - - - -}
+{define: A base-fret 0 frets x 0 2 2 2 0 fingers - - - - - -}
+{define: C base-fret 0 frets x 3 2 0 1 0 fingers - - - - - -}
+
+ [D]If it keeps on rainin', levee's goin' to break. 
+If it keeps on [A]rainin', [C]levee's [A]goin' to [D]break.
+And the [G]water gonna come in, [F]have no place to [D]stay.
+
+Well all last night I [F]sat on the levee and [D]moan.
+Well all last night I [G]sat on the levee and [D]moan.
+ [G]Thinkin' 'bout my [F]baby and my happy [D]home.
+
+If it keeps on [G]rainin', levee's [D]goin' to break.
+If it keeps on [A]rainin', [D]levee's goin' to break.
+ [G]And all these people [F]have no place to [D]stay.
+
+Now look here [G]mama what am I to [D]do.
+Now look here [A]mama what [D]am I to do.
+ [G]I ain't got nobody [F]to tell my troubles [D]to.
+
+I works on the levee mama [F]both night and [D]day.
+I works on the levee [A]mama [D]both [A]night and [D]day.
+ [G]I ain't got [F]nobody, keep the water [D]away.
+
+ [D]Oh cryin' won't help you, prayin' won't do no good.
+Oh cryin' won't help you, [G]prayin' won't do no [D]good.
+When the [G]levee breaks, [F]mama, you got to [D]lose.
+
+ [G]I works on the levee, mama [D]both night and day.
+I works on the [A]levee, [C]mama both [F]night and [D]day.
+I [G]works so hard, to [F]keep the [D]water away.
+
+ [D]I had a woman, she wouldn't do for me.
+I [G]had a woman, [D]she wouldn't do for me.
+I'm [G]goin' back [F]to my [D]used to be.
+
+ [D]I's a mean old levee, cause me to weep and moan..
+I's a mean old levee, cause me to weep and moan.
+ [G]Gonna leave my baby, [F]and my happy [D]home.

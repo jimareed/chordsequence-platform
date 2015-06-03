@@ -1,0 +1,28 @@
+<div id="title"  style="line-height:75%;">
+<table width="100%">
+<tr>
+<td align="right">
+<table><tr>
+<td width="60">
+	{$login}
+	</td><td>
+	{$openbook}
+	<a href="/chordsequence?view={$editview}&songid={$songid}&openmode={$openmode}"><img src="/images/edit.png" title="edit"/></a>
+	{$addsong}
+	{$export}
+	{$settings}
+	{$return}
+</td>
+</tr></table>
+</td>
+</tr>
+<tr>
+<td align="center" width="100%">
+{$title}
+</td>
+</tr>
+</table>
+<table width="100%">
+<tr><td align="center">{$artist}</td></tr>
+</table>
+</div>

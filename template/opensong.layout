@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var iosDragDropShim = { enableEnterLeave: true }
+</script>
+<script src="/vendor/ios-drag-drop.js"></script>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev,line,column) {
+    var data = ev.dataTransfer.getData("text");
+
+    var newpage = "/chordsequence?action=addchordref&view=opensong&songid={$songid}&pagenum={$pagenum}&chord=" + data + "&line=" + line + "&column=" + column;
+    window.location.assign(newpage);
+}
+
+function selectchord(chord) {
+    var newpage = "/chordsequence?action=updatechordstart&view=editchord&songid={$songid}&pagenum={$pagenum}&chord=" + chord;
+    window.location.assign(newpage);
+}
+
+function click(ev,line,column) {
+
+    var newpage = "/chordsequence?view=zoominsong&songid={$songid}&pagenum={$pagenum}&line=" + line + "&column=" + column;
+    window.location.assign(newpage);
+}
+
+function previous() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=opensong&songid={$previoussongid}&pagenum={$previouspagenum}&width=" + w;
+    window.location.assign(newpage);
+}
+
+function next() {
+
+    var w = window.innerWidth;
+    var newpage = "/chordsequence?view=opensong&songid={$nextsongid}&pagenum={$nextpagenum}&width=" + w;
+    window.location.assign(newpage);
+}
+
+
+
+</script>
+</head>
+<body>
+{$title}
+<table width="100%"">
+<tr height="30"/>
+<tr align="center">
+<td width="5%" valign="top">
+	<img src="/images/leftarrow.png" height="35" width="35" onclick="previous();" />
+</td>
+<td>
+{$chordchart}
+</td>
+<td width="5%" align="right" valign="top">
+	<img src="/images/rightarrow.png" height="35" width="35" onclick="next();" />
+</td>
+</tr>
+<tr>
+{$body}
+</tr>
+</table>
+</body>
+</html>

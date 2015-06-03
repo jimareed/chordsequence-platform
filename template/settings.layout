@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Settings</h1>
+
+<form action="/chordsequence" id="usrform">
+	<input name="linesperpage" value="{$linesperpage}" />
+	<input type="hidden" name="action" value="setlinesperpage" />
+	<input type="hidden" name="view" value="editsong" />
+	<input type="hidden" name="songid" value="{$songid}" />
+	<input type="hidden" name="pagenum" value="{$pagenum}" />
+	<input type="hidden" name="chord" value="{$chord}" />
+	<p>Enter the number of lines per page and press <input type="submit"></p>
+</form>
+<br>
+
+
+</body>
+</html>
